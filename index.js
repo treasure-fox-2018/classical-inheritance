@@ -41,7 +41,7 @@ class Chicken extends Animal{
 }
 // class Snake extends Animal{
 //     constructor(doge){
-//         // super();
+//         super();
 //         this.woof = doge;
 //     }
 // }
@@ -75,8 +75,8 @@ const frog = new Frog("frog", "cold blooded","reptile");
 chimpanzee.superPower.useLazerBeam();
 frog.superPower.blinkDagger();
 console.log(frog);
-console.log(chimpanzee);
-console.log(fox);
+console.log(chimpanzee);;
+console.log(fox)
 
 
 
