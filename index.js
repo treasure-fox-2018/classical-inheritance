@@ -1,16 +1,30 @@
 "use strict"
+class SuperPower {
+  constructor() {
+  }
+  fart () {
+    console.log ('super stink fart')
+  }
+  fur () {
+    console.log ('fur that get me killed')
+  }
+  hand () {
+    console.log ('can not even scratch my back ')
+  }
+}
+
 class Animal {
   constructor(fang, wing, breath) {
     this.fang = fang,
     this.wing = wing,
     this.breath = 'fire',
-    this.SuperPower = new SuperPower()
+    this.superPower = new SuperPower()
   }
 }
 
 class Tiger extends Animal {
-  constructor(fang, wing) {
-    super(fang, wing)
+  constructor(t_fang, t_wing, t_breath, t_super) {
+    super(t_fang, t_wing, t_breath, t_super)
   }
 }
 
@@ -27,26 +41,15 @@ class Dragon extends Animal {
   }
 }
 
-class SuperPower extends Animal {
-  constructor() {
-    this.SuperPower = 'breathing just fine'
-  }
-  thunderbolt() {
-    this.SuperPower = 'just like pikachu'
-  }
-  fart() {
-    this.SuperPower = 'super stink'
-  }
-}
 
+//driver code
 
-let whiteFang = new Tiger ('yes', 'yes')
-let brownFur = new Bear ('yes', 'yes')
-let blackWing = new Dragon ('yes', 'yes', 'yes')
-
-brownFur.SuperPower.thunderbolt()
-blackWing.SuperPower.fart()
-
-console.log(whiteFang)
-console.log(brownFur)
-console.log(blackWing)
+let whiteTiger = new Tiger ('yes', 'yes', 'test 1')
+let brownBear = new Bear ('yes', 'yes')
+let blackDragon = new Dragon ('yes', 'yes', 'yes')
+console.log(whiteTiger)
+whiteTiger.superPower.fart()
+console.log(brownBear)
+brownBear.superPower.fur()
+console.log(blackDragon)
+blackDragon.superPower.hand()
