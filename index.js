@@ -6,18 +6,22 @@ class Animal {
     this.lifeType = lifeType
     this.superPower = new superPower()
   }
+
 }
 
-class Dolpin extends Animal {
-  constructor(leg,lifeType){
-    super(leg,lifeType)
+class Dolphin extends Animal {
+  constructor(d_leg,d_lifeType){
+    super(d_leg, d_lifeType)
+
   }
 }
 
 class Bat extends Animal {
-  constructor(leg,lifeType){
+  constructor(leg,lifeType, color){
     super(leg,lifeType)
+
   }
+
 }
 
 class Fox extends Animal {
@@ -29,14 +33,12 @@ class Fox extends Animal {
 class Chimpanze extends Animal {
     constructor(leg,lifeType) {
         super(leg,lifeType)
-
     }
 }
 
 class Chicken extends Animal {
     constructor(leg,lifeType) {
       super(leg,lifeType)
-
     }
 }
 
@@ -55,18 +57,18 @@ class superPower {
     }
 }
 
-let dolpin = new Dolpin(2, 'water')
+let dolphin = new Dolphin(0, 'water')
 let bat = new Bat(2, 'cave')
 let fox = new Fox(4, 'land')
 let chimpanze = new Chimpanze(4, 'land')
 let chicken = new Chicken(2,'land')
 
-dolpin.superPower.sonar()
+dolphin.superPower.sonar()
 chimpanze.superPower.fastRunning()
 bat.superPower.seeInTheDark()
 fox.superPower.seeInTheDark()
 
-console.log(dolpin)
+console.log(dolphin)
 console.log(bat)
 console.log(fox)
 console.log(chimpanze)
