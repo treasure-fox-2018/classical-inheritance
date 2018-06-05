@@ -37,7 +37,7 @@ class Chicken extends Animal {
 
 class SuperPower {
   constructor() {
-
+    this.superpower = ''
   }
   use_laser_vision() {
     this.superpower = 'Kamekameha !'
@@ -53,19 +53,18 @@ class SuperPower {
   }
 }
 
-let binatang = new Animal (2, 'cold')
 
 let rubah = new Fox (4, 'hot')
-let kelalawar = new Bat (2, 'hot')
-let monyet = new Chimpanzee (2, 'hot')
-let ayam = new Chicken (2, 'hot')
-
-console.log(rubah)
-console.log(kelalawar)
-console.log(monyet)
-console.log(ayam)
-
 console.log(rubah.superpower.be_invisible())
-console.log(kelalawar.superpower.flying())
-console.log(monyet.superpower.use_laser_vision())
-console.log(ayam.superpower.be_invisible())
+// let kelalawar = new Bat (2, 'hot')
+// let monyet = new Chimpanzee (2, 'hot')
+// let ayam = new Chicken (2, 'hot')
+//
+// console.log(rubah)
+// console.log(kelalawar)
+// console.log(monyet)
+// console.log(ayam)
+
+// console.log(kelalawar.superpower.flying())
+// console.log(monyet.superpower.use_laser_vision())
+// console.log(ayam.superpower.be_invisible())
