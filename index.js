@@ -1,10 +1,10 @@
 "use strict"
 
 class Animal{
-	constructor(numOfLeg= 2, blood= warm, type){
+	constructor(numOfLeg= 2, is_warm_blooded= true){
 		this.numOfLeg = numOfLeg,
-		this.blood = `${blood} blooded`
-		this.type = type
+		this.is_warm_blooded = is_warm_blooded
+		
 	}
 }
 
@@ -28,39 +28,46 @@ class SuperPower {
 }
 
 class Bat extends Animal {
-  constructor(numOfLeg, blood, type) {
-    super(numOfLeg, blood, type);
+  constructor(numOfLeg, is_warm_blooded) {
+    super(numOfLeg, is_warm_blooded);
     this.superPower = new SuperPower();
   }
 }
 
 class Chimpanzee extends Animal {
-  constructor(numOfLeg, blood, type) {
-    super(numOfLeg, blood, type);
+  constructor(numOfLeg, is_warm_blooded) {
+    super(numOfLeg, is_warm_blooded);
     this.superPower = new SuperPower();
   }
 }
 
 class Fox extends Animal {
-  constructor(numOfLeg, blood, type) {
-    super(numOfLeg, blood, type);
+  constructor(numOfLeg, is_warm_blooded) {
+    super(numOfLeg, is_warm_blooded);
     this.superPower = new SuperPower();
   }
 }
 
 class Chicken extends Animal {
-  constructor(numOfLeg, blood, type) {
-    super(numOfLeg, blood, type);
+  constructor(numOfLeg, is_warm_blooded) {
+    super(numOfLeg, is_warm_blooded);
+    this.superPower = new SuperPower();
+  }
+}
+
+class Frog extends Animal {
+  constructor(numOfLeg, is_warm_blooded) {
+    super(numOfLeg, is_warm_blooded);
     this.superPower = new SuperPower();
   }
 }
 
 let hewan = new Animal();
-console.log(hewan.num_legs); // 2
+console.log(hewan.numOfLeg); // 2
 console.log("\n");
 
 let ayamJago = new Chicken();
-console.log(ayamJago.num_legs); // 2
+console.log(ayamJago.numOfLeg); // 2
 console.log(ayamJago.is_warm_blooded); // true
 console.log("\n");
 
